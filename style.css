@@ -1,0 +1,583 @@
+/* ===========================================
+   RESET
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================================
+   BODY
+=========================================== */
+
+body{
+
+    background:#d9d9d9;
+
+    font-family:Arial,sans-serif;
+
+    padding:20px;
+
+}
+
+/* ===========================================
+   PAGE
+=========================================== */
+
+.page{
+
+    width:210mm;
+
+    min-height:297mm;
+
+    margin:auto;
+
+    background:white;
+
+    padding:15mm;
+
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+
+}
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+header{
+
+    display:grid;
+
+    grid-template-columns:90px 1fr 180px;
+
+    column-gap:15px;
+
+    align-items:start;
+
+}
+
+/* ===========================================
+   LEFT HEADER
+=========================================== */
+
+.cash{
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    color:#0B6B2E;
+
+    margin-bottom:10px;
+
+}
+
+.logo{
+
+    width:100px;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+/* ===========================================
+   CENTER HEADER
+=========================================== */
+
+.center-head{
+
+    text-align:center;
+
+}
+
+.tamil{
+
+    font-size:10px;
+
+    font-weight:bold;
+
+    margin-bottom:3px;
+
+    color:#0B6B2E;
+
+}
+
+.center-head h1{
+
+    font-family:Cambria;
+
+    color:#0B6B2E;
+
+    font-size:34px;
+
+    letter-spacing:1px;
+
+}
+
+.center-head h3{
+
+    font-family:"Monotype Corsiva",cursive;
+
+    font-size:20px;
+
+    color:#0B6B2E;
+
+    margin-top:3px;
+
+}
+
+.center-head p{
+
+    margin-top:6px;
+
+    font-size:12px;
+
+    line-height:1.5;
+
+    color:#0B6B2E;
+
+}
+
+/* ===========================================
+   RIGHT HEADER
+=========================================== */
+
+.right-head{
+
+    font-size:13px;
+
+    color:#0B6B2E;
+
+}
+
+.mobile{
+
+    margin-bottom:10px;
+
+    font-weight:bold;
+
+}
+
+.billno,
+.date{
+
+    display:flex;
+
+    align-items:center;
+
+    margin-top:10px;
+
+}
+
+.billno label,
+.date label{
+
+    width:50px;
+
+    font-weight:bold;
+
+}
+
+.billno input,
+.date input{
+
+    flex:1;
+
+    border:none;
+
+    border-bottom:2px solid #0B6B2E;
+
+    outline:none;
+
+    font-family:Cambria;
+
+    font-size:14px;
+
+}
+
+/* ===========================================
+   TO SECTION
+=========================================== */
+
+.to{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    margin-top:18px;
+
+    margin-bottom:18px;
+
+}
+
+.to label{
+
+    width:45px;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    color:#0B6B2E;
+
+}
+
+.to-lines{
+
+    flex:1;
+
+}
+
+.to-lines input{
+
+    width:100%;
+
+    border:none;
+
+    border-bottom:1px solid #0B6B2E;
+
+    outline:none;
+
+    padding:5px 4px;
+
+    margin-bottom:10px;
+
+    font-family:Cambria;
+
+    font-size:15px;
+
+}
+
+/* ===========================================
+   BILL TABLE
+=========================================== */
+
+.bill-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    table-layout:fixed;
+
+}
+
+.bill-table th,
+.bill-table td{
+
+    border:1.5px solid #0B6B2E;
+
+    padding:6px;
+
+    height:38px;
+
+}
+
+/* ===========================================
+   TABLE HEADINGS
+=========================================== */
+
+.details-head{
+
+    font-size:22px;
+
+    font-family:Cambria;
+
+    color:#0B6B2E;
+
+    text-align:center;
+
+}
+
+.rs-head,
+.ps-head{
+
+    width:70px;
+
+    text-align:center;
+
+    color:#0B6B2E;
+
+    font-size:16px;
+
+}
+
+.rs-head span{
+
+    font-size:14px;
+
+}
+
+/* ===========================================
+   LABEL COLUMN
+=========================================== */
+
+.label{
+
+    width:190px;
+
+    font-weight:bold;
+
+    color:#0B6B2E;
+
+    font-size:14px;
+
+    white-space:nowrap;
+
+}
+
+/* ===========================================
+   INPUT COLUMN
+=========================================== */
+
+.bill-table td input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-family:Cambria;
+
+    font-size:15px;
+
+}
+
+/* ===========================================
+   AMOUNT COLUMN
+=========================================== */
+
+.amount{
+
+    text-align:right;
+
+    font-family:Cambria;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    color:#000;
+
+    padding-right:8px;
+
+}
+
+/* ===========================================
+   GRAND TOTAL
+=========================================== */
+
+.grand-total-row{
+
+    background:#f6fff8;
+
+}
+
+.grand-total{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    text-align:right;
+
+    color:#0B6B2E;
+
+    padding-right:10px;
+
+}
+
+/* ===========================================
+   PLACES VISITED
+=========================================== */
+
+.places{
+
+    margin-top:18px;
+
+}
+
+.places label{
+
+    display:block;
+
+    font-weight:bold;
+
+    color:#0B6B2E;
+
+    margin-bottom:6px;
+
+    font-size:15px;
+
+}
+
+.places textarea{
+
+    width:100%;
+
+    height:80px;
+
+    border:1.5px solid #0B6B2E;
+
+    resize:none;
+
+    outline:none;
+
+    padding:8px;
+
+    font-family:Cambria;
+
+    font-size:15px;
+
+}
+
+/* ===========================================
+   FOOTER
+=========================================== */
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-top:20px;
+}
+
+.left-footer{
+
+    width:70%;
+
+}
+
+.left-footer p{
+
+    font-size:11px;
+
+    color:#0B6B2E;
+    flex:1;
+    margin-right:30px;
+}
+
+.rupees{
+
+    display:flex;
+
+    align-items:center;
+
+    
+
+}
+
+.rupees{
+    display:flex;
+    align-items:center;
+    width:100%;
+    gap:10px;
+    color:#0B6B2E;
+    font-weight: bold;
+}
+
+.rupees input{
+    flex:1;
+    width:100%;
+    border:none;
+    border-bottom:2px solid #0B6B2E;
+    outline:none;
+    background:transparent;
+    font-family:Cambria;
+    font-size:15px;
+    padding:4px 0;
+}
+
+.right-footer{
+    text-align:right;
+    color:#0B6B2E;
+    font-weight:bold;
+    font-size:16px;
+
+    margin-top:45px;   /* Moves signature down */
+    line-height:2;     /* Two-line spacing effect */
+}
+
+/* ===========================================
+   BUTTONS
+=========================================== */
+
+.buttons{
+
+    width:210mm;
+
+    margin:20px auto;
+
+    text-align:center;
+
+}
+
+.buttons button{
+
+    background:#0B6B2E;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 24px;
+
+    margin:0 10px;
+
+    border-radius:5px;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+}
+
+.buttons button:hover{
+
+    background:#085122;
+
+}
+
+/* ===========================================
+   PRINT
+=========================================== */
+
+@media print{
+
+    body{
+
+        background:white;
+
+        padding:0;
+
+    }
+
+    .page{
+
+        width:100%;
+
+        min-height:auto;
+
+        margin:0;
+
+        padding:10mm;
+
+        box-shadow:none;
+
+    }
+
+    .buttons{
+
+        display:none;
+
+    }
+
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Invoice</title>
+</head>
+<body>
+    <div class="bill">
+        <!-- Header -->   
+        <div class="header"> 
+            <div class="left">  
+                <h4>Cash / Credit Bill</h4>   
+                <img src="logo.png" class="logo">
+            </div>
+    
+            <div class="center">
+                <p class="tamil">
+                    உ<br>அடைக்கலம் காத்த அய்யனார் துணை
+                </p>          
+                <h1>JAASRITHA CABS</h1>            
+                <h2>Tourist Car Operator</h2>            
+                <p class="address">
+                    1/10 E, Muthiaya Nagar 1<sup>st</sup> Street,
+                    Kovilpapakudi,
+                </p>            
+                <p class="address">
+                    Madurai - 625018.
+                </p>
+            </div>
+    
+            <div class="right">    
+                <div class="right">
+                    <p>Mobile: 7010335328</p>                
+                    <br>                
+                    <p>
+                        No.:
+                        <input type="text" id="billNo" value="001">
+                    </p>                
+                    <br>                
+                    <p>
+                        Date:
+                        <input type="text" id="billDate" placeholder="DD/MM/YYYY">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- TO SECTION -->
+        <div class="to-section">
+            <label>To</label>
+            <div class="to-lines">
+                <input type="text" class="line1">
+                <input type="text" class="line2">
+            </div>
+        </div>
+        <!-- BILL DETAILS -->
+        <table class="bill-table">
+            <tr class="heading">
+                <th class="details" colspan="2">
+                    BILL DETAILS
+                </th>
+                <th class="amount" colspan="2">
+                    AMOUNT
+                </th>
+            </tr>
+
+            <tr class="subheading">
+                <th colspan="2"></th>
+                    <th>Rs.</th>
+                    <th>Ps.</th>
+            </tr>
+            <tr>
+                <td>Vehicle No.</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Closing Km.</td>
+                <td>
+                    <div class="double-input">
+                        <input type="text">
+                        <label>Ending Time</label>
+                        <input type="text">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Opening Km.</td>
+                <td>
+                    <div class="double-input">                
+                        <input type="text">
+                        <label>Starting Time</label>
+                        <input type="text">
+                    </div>
+                
+                </td>    
+            </tr>
+            <tr>
+                <td>Day Rent</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Fuel Charges</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Driver Batta</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Tollgate & Parking</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Night Halt</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Extra Timing Charge</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Inter State Permit</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Places Visited<textarea rows="5"></textarea></td>
+            </tr>
+    </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

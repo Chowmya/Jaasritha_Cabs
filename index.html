@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jaasritha Cabs Bill</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- ================= HEADER ================= -->
+
+        <header>
+
+            <div class="left-head">
+
+                <div class="cash">
+                    Cash / Credit Bill
+                </div>
+
+                <img src="logo.png" class="logo">
+
+            </div>
+
+            <div class="center-head">
+
+                <div class="tamil">
+                    அடைக்கலம் காத்த அய்யனார் துணை
+                </div>
+
+                <h1>JAASRITHA CABS</h1>
+
+                <h3>Tourist Car Operator</h3>
+
+                <p>
+                    1/10 E, Muthiaya Nagar 1st Street,<br>
+                    Kovilpapakudi,<br>
+                    Madurai - 625018.
+                </p>
+
+            </div>
+
+            <div class="right-head">
+
+                <div class="mobile">
+                    Mobile : 7010335328
+                </div>
+
+                <div class="billno">
+
+                    <label>No :</label>
+
+                    <input type="text" id="billNo" size="4">
+
+                </div>
+
+                <div class="date">
+
+                    <label>Date</label>
+
+                    <input type="text" id="billDate">
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- ================= TO ================= -->
+
+        <section class="to">
+
+            <label>To</label>
+
+            <div class="to-lines">
+
+                <input type="text" id="customer1">
+
+                <input type="text" id="customer2">
+
+            </div>
+
+        </section>
+
+        <!-- ================= TABLE ================= -->
+
+        <table class="bill-table">
+
+            <tr>
+
+                <th colspan="2" class="details-head">
+
+                    BILL DETAILS
+
+                </th>
+
+                <th class="rs-head">
+
+                    AMOUNT<br>
+
+                    <span>Rs.</span>
+
+                </th>
+
+                <th class="ps-head">
+
+                    Ps.
+
+                </th>
+
+            </tr>
+            <tr>
+                <td class="label">Vehicle No.</td>
+                <td><input type="text" id="vehicleNo"></td>
+                <td class="amount" id="amtVehicle"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">Date</td>
+                <td><input type="text" id="travelDate"></td>
+                <td class="amount" id="amtDate"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">Closing Km.</td>
+                <td><input type="text" id="closingKm"></td>
+                <td class="amount" id="amtClosing"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">Opening Km.</td>
+                <td><input type="text" id="openingKm"></td>
+                <td class="amount" id="amtOpening"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">Ending Time</td>
+                <td><input type="text" id="endingTime"></td>
+                <td class="amount" id="amtEnding"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">Starting Time</td>
+                <td><input type="text" id="startingTime"></td>
+                <td class="amount" id="amtStarting"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">Day Rent</td>
+                <td>
+                    <input type="text" id="dayRent">
+                </td>
+
+                <td class="amount" id="amtDayRent"></td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">Fuel Charges</td>
+
+                <td>
+                    <input type="text" id="fuelCharges">
+                </td>
+
+                <td class="amount" id="amtFuel"></td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">Driver Batta</td>
+
+                <td>
+                    <input type="text" id="driverBatta">
+                </td>
+
+                <td class="amount" id="amtDriver"></td>
+
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">Tollgate & Parking</td>
+
+                <td>
+                    <input type="text" id="tollgate">
+                </td>
+
+                <td class="amount" id="amtToll"></td>
+
+                <td></td>
+            </tr>
+            <tr>
+                <td class="label">Night Halt</td>
+                <td>
+                    <input type="text" id="nightHalt">
+                </td>
+
+                <td class="amount" id="amtNight"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">Extra Timing Charge</td>
+                <td>
+                    <input type="text" id="extraTiming">
+                </td>
+
+                <td class="amount" id="amtExtra"></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="label">Inter State Permit</td>
+                <td>
+                    <input type="text" id="permit">
+                </td>
+
+                <td class="amount" id="amtPermit"></td>
+                <td></td>
+            </tr>
+
+            <tr class="grand-total-row">
+                <td class="label"><strong>Grand Total</strong></td>
+
+                <td></td>
+
+                <td class="amount" id="grandTotal">
+                    0
+                </td>
+
+                <td></td>
+            </tr>
+
+        </table>
+
+        <!-- ================= PLACES VISITED ================= -->
+
+        <section class="places">
+
+            <label>Places Visited :</label>
+
+            <textarea id="placesVisited" rows="3"></textarea>
+
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+
+        <div class="footer">
+
+            <div class="left-footer">
+
+                <p><strong>E &amp; O.E.</strong></p>
+
+                <div class="rupees">
+
+                    <label>Rupees :</label>
+
+                    <input type="text" id="amountWords" readonly>
+
+                </div>
+
+            </div>
+
+            <div class="right-footer">
+
+                <p>
+                    For <strong>Jaasritha Cabs</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= BUTTONS ================= -->
+
+    <div class="buttons">
+
+        <button type="button" onclick="newBill()">
+
+            New Bill
+
+        </button>
+
+        <button onclick="printBill()">
+            Print Bill
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

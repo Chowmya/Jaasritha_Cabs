@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaasritha Cabs Bill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="left-header">
+                <p class="cash">Cash / Credit Bill</p>
+                <img src="logo.png" class="logo">
+            </div>
+            <div class="center-header">
+                <h6 class="tamil">
+                    உ<br>அடைக்கலம் காத்த அய்யனார் துணை
+                </h6>
+                <h1>JAASRITHA CABS</h1>
+                <h2>Tourist Car Operator</h2>
+                <p>
+                    1/10 E, Muthiaya Nagar 1<sup>st</sup> Street, Kovilpapakudi,
+                </p>
+                <p>
+                    Madurai – 625018.
+                </p>
+            </div>
+            <div class="right-header">
+                <p>Mobile : 7010335328</p>
+                <br>
+                <p>
+                    No :
+                    <input type="text" id="billNo" maxlength="3">
+                </p>
+                <br>
+                <p>
+                    Date :
+                    <input type="text" id="billDate">
+                </p>
+            </div>
+        </header>
+        <section class="to">
+            <label>To</label>
+            <div class="lines">
+                <input type="text">
+                <input type="text">
+            </div>
+        </section>
+        <main>
+
+            <table class="bill-table">
+
+                <tr>
+                    <th colspan="2" class="details-head">BILL DETAILS</th>
+                    <th class="rs-head">AMOUNT<br><span>Rs.</span></th>
+                    <th class="ps-head">Ps.</th>
+                </tr>
+
+                <tr>
+                    <td class="label">Vehicle No.</td>
+                    <td><input type="text" id="vehicleNo"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Date</td>
+                    <td><input type="text" id="travelDate"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Closing Km.</td>
+                    <td><input type="text" id="closingKm"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Opening Km.</td>
+                    <td><input type="text" id="openingKm"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Ending Time</td>
+                    <td><input type="text" id="endingTime"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Starting Time</td>
+                    <td><input type="text" id="startingTime"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Day Rent</td>
+                    <td><input type="text" id="dayRentDesc"></td>
+                    <td><input type="text" id="dayRent" readonly></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Fuel Charges</td>
+                    <td><input type="text" id="fuelDesc"></td>
+                    <td><input type="text" id="fuel" readonly></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Driver Batta</td>
+                    <td><input type="text" id="battaDesc"></td>
+                    <td><input type="text" id="batta" readonly></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Tollgate & Parking</td>
+                    <td><input type="text" id="tollDesc"></td>
+                    <td><input type="text" id="toll" readonly></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Night Halt</td>
+                    <td><input type="text" id="nightDesc"></td>
+                    <td><input type="text" id="night" readonly></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Extra Timing Charge</td>
+                    <td><input type="text" id="extraDesc"></td>
+                    <td><input type="text" id="extra" readonly></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="label">Inter State Permit</td>
+                    <td><input type="text" id="permitDesc"></td>
+                    <td><input type="text" id="permit" readonly></td>
+                    <td></td>
+                </tr>
+
+                <tr class="grand-total">
+                    <td colspan="2"><b>Grand Total</b></td>
+                    <td><input type="text" id="totalAmount" readonly></td>
+                    <td></td>
+                </tr>
+
+            </table>
+            <div class="places">
+                <label>Places Visited :</label>
+                <textarea></textarea>
+            </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer">
+
+            <div class="eoe">E & O.E.</div>
+      
+            <div class="rupees">
+               <label>Rupees :</label>
+               <input type="text" id="amountWords">
+            </div>
+      
+            <div class="signature">
+               For Jaasritha Cabs
+            </div>
+      
+         </div>
+      
+      </div>
+      
+      <div class="buttons">
+         <button onclick="newBill()">New Bill</button>
+         <button onclick="window.print()">Print Bill</button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
