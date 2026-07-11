@@ -97,32 +97,18 @@
 
             <tr>
 
-                <th colspan="2" class="details-head">
-
-                    BILL DETAILS
-
-                </th>
-
-                <th class="rs-head">
-
-                    AMOUNT<br>
-
-                    <span>Rs.</span>
-
-                </th>
-
-                <th class="ps-head">
-
-                    Ps.
-
-                </th>
-
+                <th rowspan="2" colspan="2" class="details-head" id="detailsHead">BILL DETAILS</th>
+                <th colspan="2" class="amount-head" id="amountHead">AMOUNT</th>
+            </tr>
+            <tr>
+                <th class="rs-head" id="rsHead">Rs.</th>
+                <th class="ps-head" id="psHead">Ps.</th>
             </tr>
             <tr>
                 <td class="label">Vehicle No.</td>
-                <td><input type="text" id="vehicleNo"></td>
-                <td class="amount" id="amtVehicle"></td>
-                <td></td>
+                <td><input type="text" id="vehicleNo" class="bill-input"></td>
+                <td class="amount" id="amtVehicle"></td>    
+                <td></td>            
             </tr>
 
             <tr>
@@ -140,21 +126,21 @@
             </tr>
 
             <tr>
-                <td class="label">Opening Km.</td>
+                <td class="label" id="openingKmLabel">Opening Km.</td>
                 <td><input type="text" id="openingKm"></td>
                 <td class="amount" id="amtOpening"></td>
                 <td></td>
             </tr>
 
             <tr>
-                <td class="label">Ending Time</td>
+                <td class="time-label">Ending Time</td>
                 <td><input type="text" id="endingTime"></td>
                 <td class="amount" id="amtEnding"></td>
                 <td></td>
             </tr>
 
             <tr>
-                <td class="label">Starting Time</td>
+                <td class="time-label" id="startingTimeLabel">Starting Time</td>
                 <td><input type="text" id="startingTime"></td>
                 <td class="amount" id="amtStarting"></td>
                 <td></td>
@@ -162,24 +148,15 @@
 
             <tr>
                 <td class="label">Day Rent</td>
-                <td>
-                    <input type="text" id="dayRent">
-                </td>
-
+                <td><input type="text" id="dayRent"></td>
                 <td class="amount" id="amtDayRent"></td>
-
                 <td></td>
             </tr>
 
             <tr>
                 <td class="label">Fuel Charges</td>
-
-                <td>
-                    <input type="text" id="fuelCharges">
-                </td>
-
+                <td><input type="text" id="fuelCharges"></td>
                 <td class="amount" id="amtFuel"></td>
-
                 <td></td>
             </tr>
 
@@ -239,16 +216,14 @@
             <tr class="grand-total-row">
                 <td class="label"><strong>Grand Total</strong></td>
 
-                <td></td>
-
-                <td class="amount" id="grandTotal">
+                <td class="amount" id="grandTotal" colspan="5">
                     0
                 </td>
 
-                <td></td>
             </tr>
 
         </table>
+        
 
         <!-- ================= PLACES VISITED ================= -->
 
@@ -266,7 +241,7 @@
 
             <div class="left-footer">
 
-                <p><strong>E &amp; O.E.</strong></p>
+                <p><strong>E &amp; O.E.</strong></p><hr>
 
                 <div class="rupees">
 

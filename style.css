@@ -1,3 +1,4 @@
+
 /* ===========================================
    RESET
 =========================================== */
@@ -18,7 +19,7 @@ body{
 
     font-family:Arial,sans-serif;
 
-    padding:20px;
+    padding:5px;
 
 }
 
@@ -263,14 +264,14 @@ header{
 
     border-collapse:collapse;
 
-    table-layout:fixed;
+    table-layout:auto;
 
 }
 
 .bill-table th,
 .bill-table td{
 
-    border:1.5px solid #0B6B2E;
+    border:2px solid #0B6B2E;
 
     padding:6px;
 
@@ -294,10 +295,34 @@ header{
 
 }
 
-.rs-head,
+.amount-head
+{
+    width:150px;
+
+    text-align:center;
+
+    color:#0B6B2E;
+
+    font-size:16px;
+}
+
+.rs-head
+{
+    width: 300px;
+
+    text-align:center;
+
+    color:#0B6B2E;
+
+    font-size:16px;
+
+    border-left: 2px solid #0B6B2E !important;
+
+    border-right: 2px solid #0B6B2E;
+}
 .ps-head{
 
-    width:70px;
+    width:150px;
 
     text-align:center;
 
@@ -307,11 +332,6 @@ header{
 
 }
 
-.rs-head span{
-
-    font-size:14px;
-
-}
 
 /* ===========================================
    LABEL COLUMN
@@ -319,7 +339,7 @@ header{
 
 .label{
 
-    width:190px;
+    width:200px;
 
     font-weight:bold;
 
@@ -337,6 +357,8 @@ header{
 
 .bill-table td input{
 
+    min-width:100px;
+
     width:100%;
 
     border:none;
@@ -349,6 +371,113 @@ header{
 
     font-size:15px;
 
+    text-decoration: underline;
+
+}
+
+.bill-table th{
+    border-top: none;
+    border-bottom: 2px solid #0B6B2E;
+}
+
+.bill-table td{
+    border-top: none;
+    border-bottom: none;
+}
+
+.bill-table input[type="text"]{
+    width:100%;
+    border:none;
+    border-bottom:none;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    background:transparent;
+    outline:none;
+    font-size:15px;
+    padding:2px 0;
+    box-sizing:border-box;
+}
+
+.bill-table input[type="text"]:focus{
+    border-bottom:2px solid #1f6b2d;
+}
+
+.bill-table td{
+    padding:8px 6px;
+    vertical-align:middle;
+}
+
+.bill-table td:first-child,
+.bill-table th:first-child{
+    border-left: none !important;
+}
+
+.bill-table td:last-child,
+.bill-table th:last-child{
+    border-right: none !important;
+}
+
+
+
+.time-label{
+   /*  border-left: none !important;
+    border-right: none !important; */
+    width:200px;
+
+    font-weight:bold;
+
+    color:#0B6B2E;
+
+    font-size:14px;
+
+    white-space:nowrap;
+}
+
+.bill-table .label{
+    width:170px;
+    font-weight:bold;
+    color:#1f6b2d;
+}
+
+.bill-input{
+    width:100%;
+    border:none;
+    border-top: none;
+    border-bottom:2px solid #1f6b2d;
+    border-left: none;
+    border-right: none;
+    background:transparent;
+    outline:none;
+    box-sizing:border-box;
+}
+
+#detailsHead{
+    border-left: none;
+    border-right: 2px solid #0B6B2E;
+    border-top: 2px solid #0B6B2E;
+    border-bottom: 2px solid #0B6B2E;
+}
+
+#amountHead{
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #0B6B2E;
+    border-bottom: 2px solid #0B6B2E;
+}
+
+#rsHead{
+    border-left: none;
+    border-right: 2px solid #0B6B2E;
+    border-top: 2px solid #0B6B2E;
+    border-bottom: 2px solid #0B6B2E;
+}
+
+#psHead{
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid #0B6B2E;
+    border-bottom: 2px solid #0B6B2E;
 }
 
 /* ===========================================
@@ -375,10 +504,9 @@ header{
    GRAND TOTAL
 =========================================== */
 
-.grand-total-row{
-
-    background:#f6fff8;
-
+.grand-total-row td{
+    border-top: 2px solid #0B6B2E !important;
+    border-bottom: 2px solid #0B6B2E !important;
 }
 
 .grand-total{
@@ -393,6 +521,25 @@ header{
 
     padding-right:10px;
 
+}
+
+.grand-total-row .label{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#grandTotal{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    color: #0B6B2E;
+    padding-right: 10px;
+}
+
+.grand-total-row td{
+    border-top: 2px solid #0B6B2E !important;
+    border-bottom: 2px solid #0B6B2E !important;
+    background: #abe9ab;
 }
 
 /* ===========================================
