@@ -261,3 +261,10 @@ function printBill(){
     window.print();
 
 }
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+    .then(function() {
+        console.log("Service Worker Registered");
+    });
+}
